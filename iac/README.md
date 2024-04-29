@@ -33,6 +33,10 @@ minikube start -p <PROFILE_NAME>
 minikube stop -p <PROFILE_NAME>
 minikube delete -p <PROFILE_NAME>
 ```
+### Kubernetes dashboard
+```Bash
+minikube dashboard -p <PROFILE_NAME> --url
+```
 
 ## Destroy
 ```Bash
@@ -46,7 +50,6 @@ Package provides following scripts:
 
 # Additional resources:
 
-
 # Open points
 - [TERRAFORM] manage terraform workspaces
     - test: create two different environment with differences from variable, check if they are really segregated
@@ -58,7 +61,4 @@ Package provides following scripts:
     - can we define multiple node pools
 - [IAC/OPS] procedure + source scaffolding 
     - devise a procedure for iac + ops interconnection, summarize it in README.md
-- [MINIKUBE][KUBERNETES]
-    - manage to access the board
-    - write procedure in README.md
 - [DOC] add ops section

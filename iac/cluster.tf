@@ -6,7 +6,8 @@ resource "minikube_cluster" "docker" {
     "dashboard",
     "default-storageclass",
     "ingress",
-    "storage-provisioner"
+    "storage-provisioner",
+    "metrics-server"
   ]
 }
 
