@@ -1,0 +1,4 @@
+secretGenerator:
+- name: postgres-secret
+  files:
+  - secrets/POSTGRES_PASSWORD
