@@ -1,4 +1,11 @@
+resources:
+  - postgres-deployment.yaml
+  - pgadmin-deployment.yaml
+
 secretGenerator:
 - name: postgres-secret
   files:
   - secrets/POSTGRES_PASSWORD
+  - secrets/POSTGRES_USER
+  - secrets/PGADMIN_DEFAULT_PASSWORD
+  - secrets/PGADMIN_DEFAULT_EMAIL
