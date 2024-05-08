@@ -11,7 +11,9 @@ data:
            "Group": "Servers",
            "Port": 5432,
            "Host": "postgres.default.svc.cluster.local",
-           "SSLMode": "prefer"
+           "SSLMode": "prefer",
+           "Username": "root",
+           "MaintenanceDB": "postgres"
          }
        }
    }

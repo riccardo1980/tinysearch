@@ -16,14 +16,14 @@ spec:
         image: dpage/pgadmin4:8.6
         resources:
           limits:
-            memory: "256Mi"
-            cpu: "1000m"
+            memory: "512Mi"
+            cpu: "1"
         ports:
         - containerPort: 80
           name: www
         volumeMounts:
           - name: pgadmin-config
-            mountPath: /pgadimn4/servers.json
+            mountPath: /pgadmin4/servers.json
             subPath: servers.json
             readOnly: true
         envFrom:
