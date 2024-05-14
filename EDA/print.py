@@ -1,7 +1,7 @@
 import hashlib
 
 BUFSIZE=65536
-filename='activity.txt'
+filename='data/activity.txt'
 sha = hashlib.sha256()
 
 def file_to_sha(filename) -> str:
