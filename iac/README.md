@@ -9,9 +9,7 @@
 tfswitch
 ```
 
-## First deploy on an empty project
-
-## Local setup on an already configured project
+## Local setup
 
 ```Bash
 cd iac
@@ -49,16 +47,3 @@ Package provides following scripts:
 - scripts/terraform-lint.sh
 
 # Additional resources:
-
-# Open points
-- [TERRAFORM] manage terraform workspaces
-    - test: create two different environment with differences from variable, check if they are really segregated
-- [TERRAFORM] variables and placeholders in cluster definition
-    - variable number of nodes
-    - variable limits
-    - variable names
-- [MINIKUBE] check for minikube node pool support
-    - can we define multiple node pools
-- [IAC/OPS] procedure + source scaffolding 
-    - devise a procedure for iac + ops interconnection, summarize it in README.md
-- [DOC] add ops section
