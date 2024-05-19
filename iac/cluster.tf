@@ -2,7 +2,7 @@ resource "minikube_cluster" "docker" {
   driver         = "docker"
   cluster_name   = "terraform-provider-minikube-acc-docker"
   nodes          = 3
-  # apiserver_port = 8443
+  apiserver_port = 8443
   addons = [
     "dashboard",
     "volumesnapshots",
