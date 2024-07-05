@@ -27,8 +27,8 @@ terraform apply out.plan
 Commands to list / start / stop / destroy a profile (a cluster), see [Minikube commands](https://minikube.sigs.k8s.io/docs/commands/stop/) for more.
 ```Bash
 minikube profile list
-minikube start -p <PROFILE_NAME>
-minikube stop -p <PROFILE_NAME>
+minikube -p <PROFILE_NAME> start --insecure-registry="192.168.0.0/16"
+minikube -p <PROFILE_NAME> stop 
 minikube delete -p <PROFILE_NAME>
 ```
 ### Kubernetes dashboard

@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    App: embedder
+  name: embedder
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      App: embedder
+  template:
+    metadata:
+      labels:
+        App: embedder
+    spec:
+      containers:
+      - name: embedder
+        image: infinity-paraphrase-multilingual-mpnet-base-v2:latest
+        imagePullPolicy: IfNotPresent
+        args: ["v2"]
+        env:
+          - name: INFINITY_MODEL_ID
+            value: "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+        ports:
+        - containerPort: 7997
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 2
+            memory: 4G
+          requests:
+            cpu: 2
+            memory: 4G
