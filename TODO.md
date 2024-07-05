@@ -44,3 +44,9 @@
         - check image pulling policy: `if-not-present`
         - check memory management ([allow_mmap](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-virtual-memory.html))
         - check [Setup your own certificate](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-tls-certificates.html#k8s-setting-up-your-own-certificate)
+
+
+- [ML]
+    - [SERVING]
+        - [EMBEDDER] scaffold inference code based on [infinity](https://github.com/michaelfeil/infinity)
+        - [LLM] scaffold inference code based on [vLLM](https://docs.vllm.ai/en/stable/getting_started/quickstart.html)
